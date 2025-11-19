@@ -10,9 +10,8 @@ package="com.example.fragments">
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light">
         <activity
-            android:name=".part_1__simple_fragment.Part1Activity"
+            android:name=".part_2__fragment_factory.Part2Activity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.AppCompat.Light">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
