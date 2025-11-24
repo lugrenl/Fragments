@@ -12,20 +12,20 @@ import kotlin.random.Random
  * - Что будет, если не сделать проверку на savedInstantState
  */
 
-class TurnTwiceAddingFragmentExample : AppCompatActivity(R.layout.activity_part_7_p01) {
+class ScreenTurnTwiceAddingFragmentExample : AppCompatActivity(R.layout.activity_part_7_p01) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val randomColor = when (Random.Default.nextInt(3)) {
+        val randomColor = when (Random.nextInt(3)) {
             0 -> R.color.purple_200
             1 -> R.color.purple_700
             2 -> R.color.teal_200
             else -> R.color.black
         }
 
-        if (savedInstanceState == null) {
+        if (savedInstanceState != null) {
             supportFragmentManager.beginTransaction()
-                .add(R.id.activity_part7_container, Part7FragmentA.Companion.newInstance(randomColor))
+                .add(R.id.activity_part7_container, Part7FragmentA.newInstance(randomColor))
                 .addToBackStack(null)
                 .commit()
         }

@@ -3,11 +3,12 @@ package com.example.fragments.part_7__turn
 import android.os.Bundle
 import android.view.View
 import androidx.annotation.ColorRes
-import androidx.compose.material3.Snackbar
+import com.google.android.material.snackbar.Snackbar
 import androidx.core.content.ContextCompat
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import com.example.fragments.R
+
 
 class Part7FragmentA : Fragment(R.layout.fragment_part7_a) {
 
@@ -27,11 +28,12 @@ class Part7FragmentA : Fragment(R.layout.fragment_part7_a) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //val containerView = view.findViewById<View>(R.id.fragment_part7_a_container)
-        //containerView.setBackgroundColor(ContextCompat.getColor(requireContext(), backgroundColor))
+        val containerView = view.findViewById<View>(R.id.fragment_part7_a_container)
+        containerView.setBackgroundColor(ContextCompat.getColor(requireContext(), backgroundColor))
     }
 
     fun showSnackbar() {
-        //Snackbar.make(requireView(), "Click from second fragment")
+        Snackbar.make(requireView(), "Click from second fragment to first one", Snackbar.LENGTH_SHORT).show()
+
     }
 }

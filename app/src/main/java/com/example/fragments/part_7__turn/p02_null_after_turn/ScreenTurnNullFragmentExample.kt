@@ -22,6 +22,8 @@ class ScreenTurnNullFragmentExample
                 .add(R.id.activity_part7_p02_first_container, firstFragmentA)
                 .add(R.id.activity_part7_p02_second_container, Part7FragmentB())
                 .commit()
+        } else {
+            firstFragmentA = supportFragmentManager.findFragmentById(R.id.activity_part7_p02_first_container) as Part7FragmentA
         }
     }
 
