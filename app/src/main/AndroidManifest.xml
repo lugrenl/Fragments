@@ -10,7 +10,7 @@ package="com.example.fragments">
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light">
         <activity
-            android:name=".part_7__turn.p02_null_after_turn.ScreenTurnNullFragmentExample"
+            android:name=".part_8__communications.ActivityFragmentCommunications"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
