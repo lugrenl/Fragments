@@ -20,6 +20,7 @@ class DialogsFragmentsActivity : AppCompatActivity(R.layout.activity_part_10) {
         super.onCreate(savedInstanceState)
 
         if (savedInstanceState == null) {
+            // Example 1
 //            AlertDialog.Builder(this)
 //                .setTitle("Alert in activity")
 //                .setMessage("Show example")
@@ -28,13 +29,15 @@ class DialogsFragmentsActivity : AppCompatActivity(R.layout.activity_part_10) {
 //                }
 //                .create()
 //                .show()
-//
+
+            // Example 2
 //            BottomSheetDialogWithInputFragment.show(supportFragmentManager)
-            DialogWithInputFragment.show(supportFragmentManager)
-//
-//            supportFragmentManager.beginTransaction()
-//                .add(R.id.activity_part10__container, Part10Fragment())
-//                .commit()
+            //Example 3
+//            DialogWithInputFragment.show(supportFragmentManager)
+            // Example 4
+            supportFragmentManager.beginTransaction()
+                .add(R.id.activity_part10__container, Part10Fragment())
+                .commit()
         }
     }
 }

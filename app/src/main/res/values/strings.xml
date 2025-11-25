@@ -3,4 +3,7 @@
     <string name="fragment_a">Fragment A</string>
     <string name="fragment_b">Fragment B</string>
     <string name="click_on_me">Click on me</string>
+    <string name="enter_text">Enter text</string>
+    <string name="dialog">Dialog</string>
+    <string name="close_dialog">Close dialog</string>
 </resources>
