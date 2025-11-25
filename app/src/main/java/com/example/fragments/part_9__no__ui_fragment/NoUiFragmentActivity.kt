@@ -21,6 +21,7 @@ class NoUiFragmentActivity : AppCompatActivity(R.layout.activity_part_9) {
         if(savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
                 .add(R.id.activity_part9__container, NoUIFragment())
+                .commit()
 
         }
 
