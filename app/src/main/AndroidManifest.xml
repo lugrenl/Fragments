@@ -10,7 +10,7 @@ package="com.example.fragments">
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light">
         <activity
-            android:name=".part_9__no__ui_fragment.NoUiFragmentActivity"
+            android:name=".part_10__dialog_fragment.DialogsFragmentsActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
