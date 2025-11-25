@@ -6,6 +6,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.fragments.R
 
+
+/**
+ * Part 8 -- взаимодействие Activity & fragment
+ *
+ * - Пример изменения background-a Activity из Fragment
+ * - Пример взаимодействия между двумя фрагментами
+ */
 class ActivityFragmentCommunications
     : AppCompatActivity(R.layout.activity_part_8),
     Part8FragmentA.Part8AFragmentClickListener,
